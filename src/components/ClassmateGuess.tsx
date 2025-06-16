@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Classmate, GuessResult, GameMode } from '@/types/classmate';
 import { classmates } from '@/data/classmates';
@@ -39,12 +38,7 @@ const ClassmateGuess: React.FC = () => {
 
     if (guessedClassmate.id === targetClassmate.id) {
       setGameWon(true);
-      toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} en ${attempts + 1} essai${attempts > 0 ? 's' : ''} !`, {
-        action: {
-          label: 'Mode Emoji 🎯',
-          onClick: () => setGameMode('emoji')
-        }
-      });
+      toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} en ${attempts + 1} essai${attempts > 0 ? 's' : ''} !`);
     } else {
       toast.info(`Ce n'est pas ${guessedClassmate.name}. Essaie encore !`);
     }
@@ -140,15 +134,13 @@ const ClassmateGuess: React.FC = () => {
               Nouvelle partie
             </Button>
             
-            {gameWon && (
-              <Button
-                onClick={() => setGameMode('emoji')}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all"
-              >
-                <Sparkles className="w-4 h-4 mr-2" />
-                Mode Emoji
-              </Button>
-            )}
+            <Button
+              onClick={() => setGameMode('emoji')}
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all"
+            >
+              <Sparkles className="w-4 h-4 mr-2" />
+              Mode Emoji
+            </Button>
           </div>
         </div>
 
