@@ -1,22 +1,26 @@
 
 import React, { useState, useEffect } from 'react';
-import { Classmate, GuessResult } from '@/types/classmate';
+import { Classmate, GuessResult, GameMode } from '@/types/classmate';
 import { classmates } from '@/data/classmates';
 import ClassmateInput from './ClassmateInput';
 import GuessResultComponent from './GuessResult';
+import EmojiGame from './EmojiGame';
 import { Button } from '@/components/ui/button';
-import { RefreshCw, Trophy, Users } from 'lucide-react';
+import { RefreshCw, Trophy, Users, Sparkles } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ClassmateGuess: React.FC = () => {
+  const [gameMode, setGameMode] = useState<GameMode>('guess');
   const [targetClassmate, setTargetClassmate] = useState<Classmate | null>(null);
   const [guesses, setGuesses] = useState<Classmate[]>([]);
   const [gameWon, setGameWon] = useState(false);
   const [attempts, setAttempts] = useState(0);
 
   useEffect(() => {
-    startNewGame();
-  }, []);
+    if (gameMode === 'guess') {
+      startNewGame();
+    }
+  }, [gameMode]);
 
   const startNewGame = () => {
     const randomIndex = Math.floor(Math.random() * classmates.length);
@@ -35,7 +39,12 @@ const ClassmateGuess: React.FC = () => {
 
     if (guessedClassmate.id === targetClassmate.id) {
       setGameWon(true);
-      toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} en ${attempts + 1} essai${attempts > 0 ? 's' : ''} !`);
+      toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} en ${attempts + 1} essai${attempts > 0 ? 's' : ''} !`, {
+        action: {
+          label: 'Mode Emoji 🎯',
+          onClick: () => setGameMode('emoji')
+        }
+      });
     } else {
       toast.info(`Ce n'est pas ${guessedClassmate.name}. Essaie encore !`);
     }
@@ -87,6 +96,10 @@ const ClassmateGuess: React.FC = () => {
     return results;
   };
 
+  if (gameMode === 'emoji') {
+    return <EmojiGame onBackToGuess={() => setGameMode('guess')} />;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white p-4">
       <div className="max-w-4xl mx-auto">
@@ -118,13 +131,25 @@ const ClassmateGuess: React.FC = () => {
             />
           )}
 
-          <Button
-            onClick={startNewGame}
-            className="mt-4 bg-blue-600 hover:bg-blue-700 transition-colors"
-          >
-            <RefreshCw className="w-4 h-4 mr-2" />
-            Nouvelle partie
-          </Button>
+          <div className="flex gap-4 justify-center mt-4">
+            <Button
+              onClick={startNewGame}
+              className="bg-blue-600 hover:bg-blue-700 transition-colors"
+            >
+              <RefreshCw className="w-4 h-4 mr-2" />
+              Nouvelle partie
+            </Button>
+            
+            {gameWon && (
+              <Button
+                onClick={() => setGameMode('emoji')}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all"
+              >
+                <Sparkles className="w-4 h-4 mr-2" />
+                Mode Emoji
+              </Button>
+            )}
+          </div>
         </div>
 
         {/* Headers */}
