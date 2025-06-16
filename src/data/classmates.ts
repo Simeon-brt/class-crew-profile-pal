@@ -11,7 +11,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🏀', '💻', '🎮']
+    emojis: ['🏊‍♂️', '🤓', '👨‍💻']
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🌊', '🔌', '⚡']
+    emojis: ['🌊', '🔌', '🖧']
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Châtain',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🪨', '🔗', '📡']
+    emojis: ['👮‍♂️', '🪨', '🖧']
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Noir',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🐦', '🌳', '🔧']
+    emojis: ['👴', '🕹️', '🖧']
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Blond',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['💐', '👩‍💻', '☀️']
+    emojis: ['👩', '🤓', '👨‍💻']
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['⚽', '🔌', '🎯']
+    emojis: ['🏎️', '🏁', '👨‍💻']
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🥋', '🐉', '🌸']
+    emojis: ['🎤', '🎧', '🖧']
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Châtain',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🔨', '👑', '💻']
+    emojis: ['🚀', '⚡', '👨‍💻']
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🧠', '⚡', '🔍']
+    emojis: ['🍺', '🍻', '👨‍💻']
   },
   {
     id: 10,
@@ -110,7 +110,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🎵', '💻', '🎸']
+    emojis: ['🏀', '🤓', '👨‍💻']
   },
   {
     id: 11,
@@ -121,7 +121,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🌮', '🔥', '💻']
+    emojis: ['🍺', '🚗', '🖧']
   },
   {
     id: 12,
@@ -132,7 +132,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🎭', '💻', '🎨']
+    emojis: ['🌯', '🤓', '👨‍💻']
   },
   {
     id: 13,
@@ -143,7 +143,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🏰', '💻', '⚔️']
+    emojis: ['🚬', '🌿', '👨‍💻']
   },
   {
     id: 14,
@@ -154,7 +154,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🎣', '💻', '🌊']
+    emojis: ['🍁', '🤵', '👨‍💻']
   },
   {
     id: 15,
@@ -165,7 +165,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🎯', '💻', '🚀']
+    emojis: ['⚽', '🏟️', '👨‍💻']
   },
   {
     id: 16,
@@ -176,7 +176,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Roux',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🔥', '💻', '🎮']
+    emojis: ['🔫', '🏀', '👨‍💻']
   },
   {
     id: 17,
@@ -187,7 +187,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Noir',
     skinColor: 'Noir',
     class: 'Réseau',
-    emojis: ['👑', '🔌', '⚡']
+    emojis: ['🪖', '🧑🏿', '🖧']
   },
   {
     id: 18,
@@ -198,6 +198,6 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🦁', '💻', '🌟']
+    emojis: ['🎮', '🎵', '🖧']
   }
 ];
