@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Classmate } from '@/types/classmate';
 import { classmates } from '@/data/classmates';
@@ -16,7 +15,7 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
   const [revealedEmojis, setRevealedEmojis] = useState<number>(1); // Start with 1 emoji revealed
   const [gameWon, setGameWon] = useState(false);
   const [attempts, setAttempts] = useState(0);
-  const [wrongGuesses, setWrongGuesses] = useState<string[]>([]);
+  const [wrongGuesses, setWrongGuesses] = useState<Classmate[]>([]);
 
   useEffect(() => {
     startNewEmojiGame();
@@ -41,7 +40,7 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
       setGameWon(true);
       toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} avec ${revealedEmojis} emoji${revealedEmojis > 1 ? 's' : ''} !`);
     } else {
-      setWrongGuesses(prev => [...prev, guessedClassmate.name]);
+      setWrongGuesses(prev => [...prev, guessedClassmate]);
       if (revealedEmojis < 3) {
         setRevealedEmojis(prev => prev + 1);
         toast.info(`Ce n'est pas ${guessedClassmate.name}. Un nouvel emoji est révélé !`);
@@ -71,6 +70,11 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
       </div>
     );
   };
+
+  // Filter out already guessed classmates
+  const availableClassmates = classmates.filter(
+    classmate => !wrongGuesses.some(guess => guess.id === classmate.id)
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white p-4">
@@ -107,7 +111,7 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
                 Chaque mauvaise réponse révèle un nouvel emoji !
               </p>
               <ClassmateInput
-                classmates={classmates}
+                classmates={availableClassmates}
                 onGuess={handleGuess}
                 disabled={gameWon}
               />
@@ -138,12 +142,12 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
           <div className="mt-8 bg-gray-800 rounded-lg p-6">
             <h3 className="text-lg font-semibold mb-4 text-center">Tentatives incorrectes</h3>
             <div className="flex flex-wrap justify-center gap-2">
-              {wrongGuesses.map((name, index) => (
+              {wrongGuesses.map((classmate, index) => (
                 <span
                   key={index}
                   className="bg-red-600 px-3 py-1 rounded-full text-sm"
                 >
-                  {name}
+                  {classmate.name}
                 </span>
               ))}
             </div>
