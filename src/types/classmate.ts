@@ -6,8 +6,8 @@ export interface Classmate {
   height: number; // en cm
   gender: 'Masculin' | 'Féminin';
   hairColor: 'Blond' | 'Brun' | 'Châtain' | 'Roux' | 'Noir' | 'Gris';
-  skinColor: 'Claire' | 'Mate' | 'Foncée' | 'Bronzée';
-  class: 'A' | 'B' | 'C' | 'D';
+  skinColor: 'Blanc' | 'Métisse' | 'Noir' | 'Asiatique';
+  class: 'Dev' | 'Réseau';
 }
 
 export interface GuessResult {

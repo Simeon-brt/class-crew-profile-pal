@@ -4,102 +4,183 @@ import { Classmate } from '@/types/classmate';
 export const classmates: Classmate[] = [
   {
     id: 1,
-    name: "Marie Dubois",
-    age: 19,
-    height: 165,
-    gender: 'Féminin',
-    hairColor: 'Blond',
-    skinColor: 'Claire',
-    class: 'A'
+    name: "Siméon BEURET",
+    age: 22,
+    height: 195,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
   },
   {
     id: 2,
-    name: "Pierre Martin",
-    age: 20,
+    name: "LEFORT Marin",
+    age: 21,
     height: 178,
     gender: 'Masculin',
     hairColor: 'Brun',
-    skinColor: 'Mate',
-    class: 'B'
+    skinColor: 'Blanc',
+    class: 'Réseau'
   },
   {
     id: 3,
-    name: "Sophie Laurent",
+    name: "BRIGAUD Pierre",
     age: 18,
     height: 162,
-    gender: 'Féminin',
+    gender: 'Masculin',
     hairColor: 'Châtain',
-    skinColor: 'Claire',
-    class: 'A'
+    skinColor: 'Blanc',
+    class: 'Réseau'
   },
   {
     id: 4,
-    name: "Thomas Bernard",
-    age: 21,
+    name: "ROBIN Thomas",
+    age: 25,
     height: 182,
     gender: 'Masculin',
     hairColor: 'Noir',
-    skinColor: 'Foncée',
-    class: 'C'
+    skinColor: 'Blanc',
+    class: 'Réseau'
   },
   {
     id: 5,
-    name: "Emma Rousseau",
-    age: 19,
+    name: "JARNY Julie",
+    age: 21,
     height: 170,
     gender: 'Féminin',
-    hairColor: 'Roux',
-    skinColor: 'Claire',
-    class: 'B'
+    hairColor: 'Blond',
+    skinColor: 'Blanc',
+    class: 'Dev'
   },
   {
     id: 6,
-    name: "Lucas Petit",
-    age: 20,
+    name: "BALLENGHIEN Alexis",
+    age: 21,
     height: 175,
     gender: 'Masculin',
-    hairColor: 'Blond',
-    skinColor: 'Bronzée',
-    class: 'D'
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Réseau'
   },
   {
     id: 7,
-    name: "Camille Moreau",
-    age: 18,
+    name: "STRIZYK-TAM Enzo",
+    age: 22,
     height: 158,
-    gender: 'Féminin',
+    gender: 'Masculin',
     hairColor: 'Brun',
-    skinColor: 'Mate',
-    class: 'A'
+    skinColor: 'Blanc',
+    class: 'Réseau'
   },
   {
     id: 8,
-    name: "Antoine Lefebvre",
-    age: 22,
+    name: "PILON Paul-Alexandre",
+    age: 21,
     height: 180,
     gender: 'Masculin',
     hairColor: 'Châtain',
-    skinColor: 'Claire',
-    class: 'C'
+    skinColor: 'Blanc',
+    class: 'Dev'
   },
   {
     id: 9,
-    name: "Léa Garnier",
-    age: 19,
+    name: "FORGET Elias",
+    age: 21,
     height: 167,
-    gender: 'Féminin',
-    hairColor: 'Noir',
-    skinColor: 'Foncée',
-    class: 'B'
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
   },
   {
     id: 10,
-    name: "Maxime Roux",
-    age: 20,
+    name: "Cantin Alexis",
+    age: 22,
     height: 176,
     gender: 'Masculin',
-    hairColor: 'Gris',
-    skinColor: 'Claire',
-    class: 'D'
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 11,
+    name: "PASGRIMAUD Paco",
+    age: 21,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 12,
+    name: "MICHAUD Simon",
+    age: 22,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 13,
+    name: "HALGAND Simon",
+    age: 27,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 14,
+    name: "MOULINET Yvann",
+    age: 26,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 15,
+    name: "PLISSONNEAU Martin",
+    age: 21,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 16,
+    name: "GUIHARD Tristan",
+    age: 22,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Roux',
+    skinColor: 'Blanc',
+    class: 'Dev'
+  },
+  {
+    id: 17,
+    name: "KAMARA Maxime",
+    age: 29,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Noir',
+    skinColor: 'Noir',
+    class: 'Réseau'
+  },
+  {
+    id: 18,
+    name: "MOREAU-MENANTEAU Leo",
+    age: 22,
+    height: 176,
+    gender: 'Masculin',
+    hairColor: 'Brun',
+    skinColor: 'Blanc',
+    class: 'Dev'
   }
+
 ];
