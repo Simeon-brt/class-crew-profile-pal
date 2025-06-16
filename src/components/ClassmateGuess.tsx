@@ -90,6 +90,11 @@ const ClassmateGuess: React.FC = () => {
     return results;
   };
 
+  // Filter out already guessed classmates
+  const availableClassmates = classmates.filter(
+    classmate => !guesses.some(guess => guess.id === classmate.id)
+  );
+
   if (gameMode === 'emoji') {
     return <EmojiGame onBackToGuess={() => setGameMode('guess')} />;
   }
@@ -119,7 +124,7 @@ const ClassmateGuess: React.FC = () => {
 
           {!gameWon && (
             <ClassmateInput
-              classmates={classmates}
+              classmates={availableClassmates}
               onGuess={handleGuess}
               disabled={gameWon}
             />
