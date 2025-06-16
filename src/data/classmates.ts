@@ -4,7 +4,7 @@ import { Classmate } from '@/types/classmate';
 export const classmates: Classmate[] = [
   {
     id: 1,
-    name: "Siméon BEURET",
+    name: "BEURET Siméon",
     age: 22,
     height: 195,
     gender: 'Masculin',
@@ -60,7 +60,7 @@ export const classmates: Classmate[] = [
     gender: 'Masculin',
     hairColor: 'Brun',
     skinColor: 'Blanc',
-    class: 'Réseau'
+    class: 'Dev'
   },
   {
     id: 7,
@@ -110,7 +110,7 @@ export const classmates: Classmate[] = [
     gender: 'Masculin',
     hairColor: 'Brun',
     skinColor: 'Blanc',
-    class: 'Dev'
+    class: 'Réseau'
   },
   {
     id: 12,
@@ -180,7 +180,7 @@ export const classmates: Classmate[] = [
     gender: 'Masculin',
     hairColor: 'Brun',
     skinColor: 'Blanc',
-    class: 'Dev'
+    class: 'Réseau'
   }
 
 ];
