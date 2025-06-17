@@ -1,4 +1,3 @@
-
 import { Classmate } from '@/types/classmate';
 
 export const classmates: Classmate[] = [
@@ -11,7 +10,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🏊‍♂️', '🤓', '👨‍💻']
+    emojis: ['🏊‍♂️', '🤓', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 2,
@@ -22,7 +22,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🌊', '🔌', '🖧']
+    emojis: ['🌊', '🔌', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 3,
@@ -33,7 +34,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Châtain',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['👮‍♂️', '🪨', '🖧']
+    emojis: ['👮‍♂️', '🪨', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 4,
@@ -44,7 +46,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Noir',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['👴', '🕹️', '🖧']
+    emojis: ['👴', '🕹️', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 5,
@@ -55,7 +58,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Blond',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['👩', '🤓', '👨‍💻']
+    emojis: ['👩', '🤓', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 6,
@@ -66,7 +70,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🏎️', '🏁', '👨‍💻']
+    emojis: ['🏎️', '🏁', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 7,
@@ -77,7 +82,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🎤', '🎧', '🖧']
+    emojis: ['🎤', '🎧', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 8,
@@ -88,7 +94,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Châtain',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🚀', '⚡', '👨‍💻']
+    emojis: ['🚀', '⚡', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 9,
@@ -99,7 +106,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🍺', '🍻', '👨‍💻']
+    emojis: ['🍺', '🍻', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 10,
@@ -110,7 +118,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🏀', '🤓', '👨‍💻']
+    emojis: ['🏀', '🤓', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 11,
@@ -121,7 +130,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🍺', '🚗', '🖧']
+    emojis: ['🍺', '🚗', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 12,
@@ -132,7 +142,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🌯', '🤓', '👨‍💻']
+    emojis: ['🌯', '🤓', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 13,
@@ -143,7 +154,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🚬', '🌿', '👨‍💻']
+    emojis: ['🚬', '🌿', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 14,
@@ -154,7 +166,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🍁', '🤵', '👨‍💻']
+    emojis: ['🍁', '🤵', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 15,
@@ -165,7 +178,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['⚽', '🏟️', '👨‍💻']
+    emojis: ['⚽', '🏟️', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 16,
@@ -176,7 +190,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Roux',
     skinColor: 'Blanc',
     class: 'Dev',
-    emojis: ['🔫', '🏀', '👨‍💻']
+    emojis: ['🔫', '🏀', '👨‍💻'],
+    imageUrl: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 17,
@@ -187,7 +202,8 @@ export const classmates: Classmate[] = [
     hairColor: 'Noir',
     skinColor: 'Noir',
     class: 'Réseau',
-    emojis: ['🪖', '🧑🏿', '🖧']
+    emojis: ['🪖', '🧑🏿', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   },
   {
     id: 18,
@@ -198,6 +214,7 @@ export const classmates: Classmate[] = [
     hairColor: 'Brun',
     skinColor: 'Blanc',
     class: 'Réseau',
-    emojis: ['🎮', '🎵', '🖧']
+    emojis: ['🎮', '🎵', '🖧'],
+    imageUrl: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
   }
 ];

@@ -4,8 +4,9 @@ import { classmates } from '@/data/classmates';
 import ClassmateInput from './ClassmateInput';
 import GuessResultComponent from './GuessResult';
 import EmojiGame from './EmojiGame';
+import ImageGame from './ImageGame';
 import { Button } from '@/components/ui/button';
-import { RefreshCw, Trophy, Users, Sparkles } from 'lucide-react';
+import { RefreshCw, Trophy, Users, Sparkles, Image } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ClassmateGuess: React.FC = () => {
@@ -99,6 +100,10 @@ const ClassmateGuess: React.FC = () => {
     return <EmojiGame onBackToGuess={() => setGameMode('guess')} />;
   }
 
+  if (gameMode === 'image') {
+    return <ImageGame onBackToGuess={() => setGameMode('guess')} />;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white p-4">
       <div className="max-w-4xl mx-auto">
@@ -130,7 +135,7 @@ const ClassmateGuess: React.FC = () => {
             />
           )}
 
-          <div className="flex gap-4 justify-center mt-4">
+          <div className="flex gap-4 justify-center mt-4 flex-wrap">
             <Button
               onClick={startNewGame}
               className="bg-blue-600 hover:bg-blue-700 transition-colors"
@@ -145,6 +150,14 @@ const ClassmateGuess: React.FC = () => {
             >
               <Sparkles className="w-4 h-4 mr-2" />
               Mode Emoji
+            </Button>
+
+            <Button
+              onClick={() => setGameMode('image')}
+              className="bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 transition-all"
+            >
+              <Image className="w-4 h-4 mr-2" />
+              Mode Image
             </Button>
           </div>
         </div>

@@ -9,6 +9,7 @@ export interface Classmate {
   skinColor: 'Blanc' | 'Métisse' | 'Noir' | 'Asiatique';
   class: 'Dev' | 'Réseau';
   emojis: [string, string, string]; // Exactly 3 emojis
+  imageUrl?: string; // URL de l'image pour le mode image
 }
 
 export interface GuessResult {
@@ -17,4 +18,4 @@ export interface GuessResult {
   status: 'correct' | 'partial' | 'incorrect' | 'higher' | 'lower';
 }
 
-export type GameMode = 'guess' | 'emoji';
+export type GameMode = 'guess' | 'emoji' | 'image';
