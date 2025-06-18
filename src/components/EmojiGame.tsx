@@ -38,6 +38,7 @@ const EmojiGame: React.FC<EmojiGameProps> = ({ onBackToGuess }) => {
 
     if (guessedClassmate.id === targetClassmate.id) {
       setGameWon(true);
+      setRevealedEmojis(3);
       toast.success(`Félicitations ! Tu as trouvé ${targetClassmate.name} avec ${revealedEmojis} emoji${revealedEmojis > 1 ? 's' : ''} !`);
     } else {
       setWrongGuesses(prev => [...prev, guessedClassmate]);
