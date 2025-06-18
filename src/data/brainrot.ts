@@ -1,46 +1,63 @@
-
 export interface BrainrotItem {
   id: number;
   name: string;
   imageUrl: string;
-  description?: string;
 }
 
 export const brainrotItems: BrainrotItem[] = [
   {
     id: 1,
     name: "Tralalero Tralala",
-    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "Le fameux mème italien qui chante"
+    imageUrl: "/images/TralaleroTralala.webp",
   },
   {
     id: 2,
-    name: "Brmm Brmm Patapim",
-    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "Le son de moteur italien"
+    name: "Brr brr Patapim",
+    imageUrl: "/images/brrbrrpatapim.webp",
   },
   {
     id: 3,
-    name: "Gabagool",
-    imageUrl: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "Le classique italien-américain"
+    name: "Tung tung tung sahur",
+    imageUrl: "/images/tungtungsahur.webp",
   },
   {
     id: 4,
-    name: "Mamma Mia",
-    imageUrl: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "L'expression italienne emblématique"
+    name: "Udin din din du",
+    imageUrl: "/images/UdinDinDinDu.webp",
   },
   {
     id: 5,
-    name: "Pesto Pasta",
-    imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "La passion italienne pour les pâtes"
+    name: "Favé (Fruli Frula)",
+    imageUrl: "/images/FruliFrula.webp",
   },
   {
     id: 6,
-    name: "Bella Ciao",
-    imageUrl: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    description: "La célèbre chanson italienne"
+    name: "Bananini Champanzini",
+    imageUrl: "/images/Bananini.webp",
+  },
+  {
+    id: 7,
+    name: "Bombarlilo Crocodillo",
+    imageUrl: "/images/BombardiloCrocodilo.webp",
+  },
+  {
+    id: 8,
+    name: "Il Cacto Hipopotamo",
+    imageUrl: "/images/CactoHippo.webp",
+  },
+  {
+    id: 9,
+    name: "Trippi Troppi",
+    imageUrl: "/images/TrippiTropi.webp",
+  },
+  {
+    id: 10,
+    name: "Lirilì Larilà",
+    imageUrl: "/images/LiriliLirila.webp",
+  },
+  {
+    id: 11,
+    name: "Ballerina Cappuccina",
+    imageUrl: "/images/BallerinaCapucinna.webp",
   }
 ];

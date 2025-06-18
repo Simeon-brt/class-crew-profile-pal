@@ -39,10 +39,11 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
     if (guessedBrainrot.id === targetBrainrot.id) {
       setGameWon(true);
       toast.success(`Félicitations ! Tu as trouvé ${targetBrainrot.name} avec un zoom de ${zoomLevel}% !`);
+      setZoomLevel(100); // Reset zoom level for next game
     } else {
       setWrongGuesses(prev => [...prev, guessedBrainrot]);
       if (zoomLevel > 100) {
-        const newZoomLevel = Math.max(100, zoomLevel - 100); // Decrease zoom by 100% each time, minimum 100%
+        const newZoomLevel = Math.max(100, zoomLevel - 40); // Decrease zoom by 100% each time, minimum 100%
         setZoomLevel(newZoomLevel);
         toast.info(`Ce n'est pas ${guessedBrainrot.name}. L'image se dézoome !`);
       } else {
@@ -171,9 +172,6 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
             <p className="text-lg">
               Tu as trouvé <strong>{targetBrainrot.name}</strong> avec un zoom de {zoomLevel}% !
             </p>
-            {targetBrainrot.description && (
-              <p className="text-sm text-orange-200 mt-2">{targetBrainrot.description}</p>
-            )}
             <div className="mt-4">
               <img 
                 src={targetBrainrot.imageUrl} 
