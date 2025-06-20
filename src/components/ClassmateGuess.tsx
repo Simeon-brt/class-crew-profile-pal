@@ -12,12 +12,14 @@ interface ClassmateGuessProps {
   // No props for now
 }
 
+type GameMode = 'guess' | 'emoji' | 'image' | 'world';
+
 const ClassmateGuess: React.FC<ClassmateGuessProps> = () => {
   const [targetBrainrot, setTargetBrainrot] = useState<BrainrotItem | null>(null);
   const [gameWon, setGameWon] = useState(false);
   const [attempts, setAttempts] = useState(0);
   const [wrongGuesses, setWrongGuesses] = useState<BrainrotItem[]>([]);
-  const [currentGame, setCurrentGame] = useState<'guess' | 'emoji' | 'image' | 'world'>('guess');
+  const [currentGame, setCurrentGame] = useState<GameMode>('guess');
 
   useEffect(() => {
     startNewGame();
