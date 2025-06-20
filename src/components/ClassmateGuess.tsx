@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { BrainrotItem, brainrotItems } from '@/data/brainrot';
 import BrainrotInput from './BrainrotInput';
