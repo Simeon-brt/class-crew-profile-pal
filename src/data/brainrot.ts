@@ -23,7 +23,7 @@ export const brainrotItems: BrainrotItem[] = [
   {
     id: 4,
     name: "Udin din din du",
-    imageUrl: "/images/UdinDinDinDu.webp",
+    imageUrl: "/images/images.jpg",
   },
   {
     id: 5,
