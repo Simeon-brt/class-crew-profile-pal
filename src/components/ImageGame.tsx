@@ -28,7 +28,7 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
     setGameWon(false);
     setAttempts(0);
     setWrongGuesses([]);
-    console.log('Nouveau jeu brainrot commencé. Élément à deviner:', brainrotItems[randomIndex].name);
+    console.log('Nouveau jeu commencé. Élément à deviner:', brainrotItems[randomIndex].name);
   };
 
   const handleGuess = (guessedBrainrot: BrainrotItem) => {
@@ -135,7 +135,7 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
               className="bg-orange-600 hover:bg-orange-700 transition-colors"
             >
               <RefreshCw className="w-4 h-4 mr-2" />
-              Nouveau brainrot
+              Nouveau jeu image
             </Button>
             
             <Button
