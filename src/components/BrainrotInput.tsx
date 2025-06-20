@@ -71,7 +71,7 @@ const BrainrotInput: React.FC<BrainrotInputProps> = ({ brainrotItems, onGuess, d
             onFocus={() => setShowSuggestions(true)}
             onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
             onKeyDown={handleKeyDown}
-            placeholder="Tape le nom du brainrot..."
+            placeholder="Tape le nom "
             disabled={disabled}
             className="w-full px-4 py-3 text-lg border-2 border-yellow-500 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 disabled:opacity-50"
           />
@@ -87,9 +87,6 @@ const BrainrotInput: React.FC<BrainrotInputProps> = ({ brainrotItems, onGuess, d
                   }`}
                 >
                   <div className="font-medium text-white">{item.name}</div>
-                  {item.description && (
-                    <div className="text-sm text-gray-400">{item.description}</div>
-                  )}
                 </div>
               ))}
             </div>

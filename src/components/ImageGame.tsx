@@ -93,10 +93,10 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
-            Brainrot Italia 🍝
+            L3INFOdle.net
           </h1>
           <p className="text-xl text-gray-300 mb-6">
-            Devine le brainrot italien grâce à l'image !
+            Devine l'image !
           </p>
           
           <div className="flex items-center justify-center gap-6 mb-6">
@@ -116,7 +116,7 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
           {!gameWon && (
             <div className="mb-6">
               <p className="text-lg mb-4 text-gray-300">
-                Quel brainrot italien est représenté sur cette image ?
+                Qui est représenté sur cette image ?
               </p>
               <p className="text-sm text-gray-400 mb-4">
                 Chaque mauvaise réponse dézoome l'image !
@@ -167,7 +167,7 @@ const ImageGame: React.FC<ImageGameProps> = ({ onBackToGuess }) => {
 
         {/* Game Won Message */}
         {gameWon && targetBrainrot && (
-          <div className="mt-8 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg p-6 text-center">
+          <div className="mt-8 bg-gradient-to-r from-green-600 to-green-600 rounded-lg p-6 text-center">
             <h3 className="text-2xl font-bold mb-2">🎉 Mamma mia ! 🇮🇹</h3>
             <p className="text-lg">
               Tu as trouvé <strong>{targetBrainrot.name}</strong> avec un zoom de {zoomLevel}% !
