@@ -18,4 +18,4 @@ export interface GuessResult {
   status: 'correct' | 'partial' | 'incorrect' | 'higher' | 'lower';
 }
 
-export type GameMode = 'guess' | 'emoji' | 'image';
+export type GameMode = 'guess' | 'emoji' | 'image' | 'world';

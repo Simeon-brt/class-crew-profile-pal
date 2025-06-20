@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { BrainrotItem, brainrotItems } from '@/data/brainrot';
+import { GameMode } from '@/types/classmate';
 import BrainrotInput from './BrainrotInput';
 import { Button } from '@/components/ui/button';
 import { RefreshCw, Trophy, Users } from 'lucide-react';
@@ -12,8 +12,6 @@ import WorldMapGame from './WorldMapGame';
 interface ClassmateGuessProps {
   // No props for now
 }
-
-type GameMode = 'guess' | 'emoji' | 'image' | 'world';
 
 const ClassmateGuess: React.FC<ClassmateGuessProps> = () => {
   const [targetBrainrot, setTargetBrainrot] = useState<BrainrotItem | null>(null);
